@@ -3,7 +3,7 @@ import useFetch from "../useFetch"
 
 const AllBooks = () => {
     const [successMsg, setSuccessMsg] = useState("")
-    const {data, loading, error} = useFetch("http://localhost:3000/books")
+    const {data, loading, error} = useFetch("https://book-ap-is.vercel.app/books")
     const handleDeleteBtn = async (bookId) => {
         const response = await fetch(`http://localhost:3000/books/${bookId}`,
             {
