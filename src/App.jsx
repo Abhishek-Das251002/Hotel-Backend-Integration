@@ -1,10 +1,10 @@
 import './App.css'
-import AllBooks from './rqdComponents/AllBooks'
+import AllHotelsNames from './rqdComponents/AllHotels'
 
 function App() {
   return (
     <>
-      <AllBooks/>
+      <AllHotelsNames/>
     </>
   )
 }
