@@ -2,11 +2,11 @@ import { useState } from "react"
 import useFetch from "../useFetch"
 
 const AllHotelsNames = () => {
-    const {data, loading, error} = useFetch("http://localhost:3000/hotels")
+    const {data, loading, error} = useFetch("https://hotel-ap-is.vercel.app/hotels")
     const [successMsg, setSuccessMsg] = useState("")
     const handleDeleteBtn = async (hotelId) => {
         try{
-            const response = await fetch(`http://localhost:3000/hotels/${hotelId}`,
+            const response = await fetch(`https://hotel-ap-is.vercel.app/hotels/${hotelId}`,
             {
                 method: "DELETE",
             }
